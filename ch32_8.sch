@@ -1,0 +1,183 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CH32V003:CH32V003j4m6 U1
+U 1 1 699E658A
+P 5450 3300
+F 0 "U1" H 5450 4115 50  0000 C CNN
+F 1 "CH32V003j4m6" H 5450 4024 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5400 4150 50  0001 C CNN
+F 3 "https://github.com/cnlohr/ch32v003fun" H 5600 4050 50  0001 C CNN
+	1    5450 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J2
+U 1 1 699E8E53
+P 5350 1750
+F 0 "J2" H 5458 2031 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 5458 1940 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 5350 1750 50  0001 C CNN
+F 3 "~" H 5350 1750 50  0001 C CNN
+	1    5350 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 699E94ED
+P 3450 3600
+F 0 "D1" V 3489 3483 50  0000 R CNN
+F 1 "LED" V 3398 3483 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3450 3600 50  0001 C CNN
+F 3 "~" H 3450 3600 50  0001 C CNN
+	1    3450 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 699E9A2D
+P 3450 3100
+F 0 "R1" H 3380 3054 50  0000 R CNN
+F 1 "R" H 3380 3145 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3380 3100 50  0001 C CNN
+F 3 "~" H 3450 3100 50  0001 C CNN
+	1    3450 3100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5550 1750 7100 1750
+Wire Wire Line
+	7100 1750 7100 3600
+Wire Wire Line
+	7100 3600 6650 3600
+Wire Wire Line
+	5550 1650 5550 1600
+Wire Wire Line
+	5550 1850 5550 1900
+Wire Wire Line
+	5550 1900 4000 1900
+Wire Wire Line
+	4000 1900 4000 2800
+Wire Wire Line
+	4000 2800 4100 2800
+$Comp
+L Device:C C1
+U 1 1 699EAAE0
+P 4100 3250
+F 0 "C1" H 4215 3296 50  0000 L CNN
+F 1 "C" H 4215 3205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4138 3100 50  0001 C CNN
+F 3 "~" H 4100 3250 50  0001 C CNN
+	1    4100 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3100 4100 2800
+Connection ~ 4100 2800
+Wire Wire Line
+	4100 2800 4250 2800
+Wire Wire Line
+	4100 3400 4100 3750
+Connection ~ 4100 3750
+Wire Wire Line
+	4100 3750 4250 3750
+Wire Wire Line
+	3100 1600 3100 3750
+Wire Wire Line
+	3100 1600 5550 1600
+Wire Wire Line
+	3100 3750 3450 3750
+Connection ~ 3450 3750
+Wire Wire Line
+	3450 3750 4100 3750
+Wire Wire Line
+	3450 3450 3450 3250
+Wire Wire Line
+	3450 2950 3450 2800
+Wire Wire Line
+	3450 2800 4000 2800
+Connection ~ 4000 2800
+$Comp
+L Connector:Conn_01x08_Male J1
+U 1 1 699F2F36
+P 5300 4700
+F 0 "J1" V 5227 4628 50  0000 C CNN
+F 1 "Conn_01x08_Male" V 5136 4628 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 5300 4700 50  0001 C CNN
+F 3 "~" H 5300 4700 50  0001 C CNN
+	1    5300 4700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4100 4050 4100 3750
+Wire Wire Line
+	6650 3000 7300 3000
+Wire Wire Line
+	7300 3000 7300 4000
+Wire Wire Line
+	7300 4000 5000 4000
+Wire Wire Line
+	5000 4000 5000 4500
+Wire Wire Line
+	4100 4050 5100 4050
+Wire Wire Line
+	5100 4050 5100 4500
+Wire Wire Line
+	6650 3100 7250 3100
+Wire Wire Line
+	7250 3100 7250 4050
+Wire Wire Line
+	7250 4050 5200 4050
+Wire Wire Line
+	5200 4050 5200 4500
+Wire Wire Line
+	4000 2800 4000 4100
+Wire Wire Line
+	4000 4100 5300 4100
+Wire Wire Line
+	5300 4100 5300 4500
+Wire Wire Line
+	6650 3300 7200 3300
+Wire Wire Line
+	7200 3300 7200 4100
+Wire Wire Line
+	7200 4100 5400 4100
+Wire Wire Line
+	5400 4100 5400 4500
+Wire Wire Line
+	6650 3400 7150 3400
+Wire Wire Line
+	7150 3400 7150 4150
+Wire Wire Line
+	7150 4150 5500 4150
+Wire Wire Line
+	5500 4150 5500 4500
+Wire Wire Line
+	6650 3500 7050 3500
+Wire Wire Line
+	7050 3500 7050 4200
+Wire Wire Line
+	7050 4200 5600 4200
+Wire Wire Line
+	5600 4200 5600 4500
+Wire Wire Line
+	7100 3600 7100 4250
+Wire Wire Line
+	7100 4250 5700 4250
+Wire Wire Line
+	5700 4250 5700 4500
+Connection ~ 7100 3600
+$EndSCHEMATC
